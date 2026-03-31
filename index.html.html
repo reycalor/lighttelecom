@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Telecom | Internet Fibra em Guarapari</title>
+    
+    <!-- Tailwind CSS para Estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); }
+        .hero-gradient { background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.7)); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 shadow-sm glass border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="bg-cyan-600 p-2 rounded-lg text-white">
+                        <i data-lucide="activity" class="h-6 w-6"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-2xl text-blue-900">Light</span>
+                        <span class="font-light text-2xl text-cyan-600">Telecom</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#inicio" class="text-slate-600 hover:text-cyan-600 transition">Início</a>
+                    <a href="#sobre" class="text-slate-600 hover:text-cyan-600 transition">Sobre</a>
+                    <a href="#servicos" class="text-slate-600 hover:text-cyan-600 transition">Serviços</a>
+                    <a href="#planos" class="text-slate-600 hover:text-cyan-600 transition">Planos</a>
+                    <a href="#" class="bg-blue-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-800 transition shadow-lg shadow-blue-900/20">Área do Cliente</a>
+                </div>
+
+                <!-- Botão Mobile -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 p-2">
+                        <i data-lucide="menu" class="h-7 w-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 text-center shadow-xl">
+            <a href="#inicio" class="block text-lg">Início</a>
+            <a href="#sobre" class="block text-lg">Sobre Nós</a>
+            <a href="#servicos" class="block text-lg">Serviços</a>
+            <a href="#planos" class="block text-lg">Planos</a>
+            <button class="w-full bg-blue-900 text-white py-3 rounded-xl font-bold">Área do Cliente</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden min-h-[80vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1594411135898-757041249b6b?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Guarapari" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-2xl text-white">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-400/30 text-cyan-200 text-sm font-semibold mb-8 backdrop-blur-md">
+                    <i data-lucide="zap" class="h-4 w-4"></i> A melhor internet de Guarapari
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Conexão que ilumina a sua <span class="text-cyan-400">cidade.</span>
+                </h1>
+                <p class="text-xl text-blue-50 mb-10 font-light leading-relaxed">
+                    Fibra óptica de alta performance para residências e empresas. Estabilidade total para navegar na velocidade da luz.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#planos" class="bg-cyan-500 hover:bg-cyan-400 text-blue-950 px-10 py-4 rounded-full font-bold text-lg text-center transition-all shadow-xl shadow-cyan-500/30">
+                        Conhecer Planos
+                    </a>
+                    <a href="https://wa.me/5527999990000" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-10 py-4 rounded-full font-medium text-lg text-center backdrop-blur-md transition-all">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-cyan-100 rounded-full blur-3xl opacity-50"></div>
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Telecom" class="relative rounded-[2.5rem] shadow-2xl z-10 border-8 border-slate-50 aspect-video object-cover">
+                </div>
+                <div>
+                    <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Sobre a Light Telecom</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-8 leading-tight">Orgulho em ser capixaba e servir Guarapari</h3>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                        Nascemos com a missão de trazer conectividade real para Guarapari. Investimos em tecnologia de ponta e em suporte local para garantir que você nunca fique offline.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="text-cyan-500"></i>
+                            <span class="font-semibold">Fibra de Ponta a Ponta</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="text-cyan-500"></i>
+                            <span class="font-semibold">Suporte Local 24h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Nossas Soluções</h2>
+                <p class="text-slate-500">Tecnologia sob medida para cada necessidade.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="bg-cyan-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-cyan-500 transition-colors">
+                        <i data-lucide="wifi" class="h-8 w-8 text-cyan-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Internet Fibra</h4>
+                    <p class="text-slate-500 leading-relaxed">Alta velocidade para streaming, jogos e home office sem interrupções.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="server" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Link Dedicado</h4>
+                    <p class="text-slate-500 leading-relaxed">Conexão profissional com 100% de banda garantida para empresas.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="bg-cyan-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-cyan-500 transition-colors">
+                        <i data-lucide="phone-call" class="h-8 w-8 text-cyan-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Telefonia IP</h4>
+                    <p class="text-slate-500 leading-relaxed">Soluções inteligentes de voz para reduzir custos e aumentar produtividade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Planos Residenciais</h2>
+                <p class="text-slate-500">Escolha a velocidade ideal para a sua rotina.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <!-- Plano 1 -->
+                <div class="border border-slate-200 p-10 rounded-[2.5rem] hover:border-cyan-500 transition-all">
+                    <h5 class="text-slate-400 font-semibold mb-6">ESSENCIAL</h5>
+                    <div class="flex items-baseline gap-2 mb-2">
+                        <span class="text-6xl font-extrabold text-blue-950">400</span>
+                        <span class="text-2xl font-bold text-slate-400">MEGA</span>
+                    </div>
+                    <div class="text-3xl font-bold text-cyan-600 mb-10">R$ 89,90<span class="text-sm font-normal text-slate-400">/mês</span></div>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-500 h-5 w-5"></i> Wi-Fi Dual Band Incluso</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-500 h-5 w-5"></i> Suporte Técnico Local</li>
+                    </ul>
+                    <button class="w-full py-4 bg-slate-100 rounded-2xl font-bold hover:bg-slate-200 transition">Contratar</button>
+                </div>
+                <!-- Plano 2 (Destaque) -->
+                <div class="bg-blue-900 p-10 rounded-[2.5rem] text-white scale-105 shadow-2xl relative">
+                    <div class="absolute top-6 right-6 bg-cyan-400 text-blue-950 text-xs font-black px-3 py-1 rounded-full uppercase">Popular</div>
+                    <h5 class="text-blue-300 font-semibold mb-6">FAMÍLIA</h5>
+                    <div class="flex items-baseline gap-2 mb-2">
+                        <span class="text-6xl font-extrabold">600</span>
+                        <span class="text-2xl font-bold text-blue-300">MEGA</span>
+                    </div>
+                    <div class="text-3xl font-bold text-cyan-400 mb-10">R$ 109,90<span class="text-sm font-normal text-blue-300">/mês</span></div>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-400 h-5 w-5"></i> Ideal para 4K e Jogos</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-400 h-5 w-5"></i> Wi-Fi 6 de Alta Potência</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-400 h-5 w-5"></i> Instalação Prioritária</li>
+                    </ul>
+                    <button class="w-full py-4 bg-cyan-400 text-blue-900 rounded-2xl font-bold hover:bg-cyan-300 transition">Assinar Agora</button>
+                </div>
+                <!-- Plano 3 -->
+                <div class="border border-slate-200 p-10 rounded-[2.5rem] hover:border-cyan-500 transition-all">
+                    <h5 class="text-slate-400 font-semibold mb-6">GAMER ULTRA</h5>
+                    <div class="flex items-baseline gap-2 mb-2">
+                        <span class="text-6xl font-extrabold text-blue-950">1</span>
+                        <span class="text-2xl font-bold text-slate-400">GIGA</span>
+                    </div>
+                    <div class="text-3xl font-bold text-cyan-600 mb-10">R$ 149,90<span class="text-sm font-normal text-slate-400">/mês</span></div>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-500 h-5 w-5"></i> Latência Ultra Baixa</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-cyan-500 h-5 w-5"></i> Roteador Mesh Premium</li>
+                    </ul>
+                    <button class="w-full py-4 bg-slate-100 rounded-2xl font-bold hover:bg-slate-200 transition">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="activity" class="h-6 w-6 text-cyan-400"></i>
+                        <span class="font-bold text-xl text-white">Light Telecom</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">Conectando Guarapari com o que há de mais moderno em fibra óptica.</p>
+                </div>
+                <div>
+                    <h6 class="text-white font-bold mb-6">Explorar</h6>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#sobre" class="hover:text-cyan-400 transition">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="hover:text-cyan-400 transition">Serviços</a></li>
+                        <li><a href="#planos" class="hover:text-cyan-400 transition">Planos</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <h6 class="text-white font-bold mb-6">Atendimento Guarapari</h6>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-3"><i data-lucide="phone" class="text-cyan-400 h-4 w-4"></i> (27) 99999-0000</div>
+                        <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-cyan-400 h-4 w-4"></i> Centro, Guarapari - ES</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-900 text-center text-xs">
+                © <span id="year"></span> Light Telecom | lighttelecom.net.br
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para funcionalidades -->
+    <script>
+        // Inicializar ícones
+        lucide.createIcons();
+
+        // Menu Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+        // Ano Automático no Rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Fechar menu ao clicar em link (Mobile)
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
